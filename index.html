@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <script src="/main.js" defer></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="/style.css">
     <title>Tip calculator app</title>
   </head>
@@ -51,19 +51,24 @@
           </form> -->
     <!-- <form action="#" id="formulario"> -->
       <label for="subtotal">Bill</label><br>
-      <input type="number" name="subtotal" id="subtotal" placeholder="Subtotal" /><br />
-      <label for="propina">Porcentaje propina</label><br>
+      <input type="number" name="subtotal" id="subtotal" placeholder="0" /><br />
+      <label for="propina">Select Tip %</label><br>
+      <button value=.05 id="p05" class="propina">5%</button>
       <button value=.10 id="p10" class="propina">10%</button>
       <button value=.15 id="p15" class="propina">15%</button>
-      <input type="number" id="custom" class="propina" placeholder="Custom">
+      <button value=.25 id="p25" class="propina">25%</button>
+      <button value=.5 id="p15" class="propina">50%</button>
+      <input type="number" id="custom" placeholder="Custom">
       <br />
-      <label for="numPersonas">Numero de Personas</label><br>
-      <input type="number" name="numPersonas" placeholder="Numero de personas" id="numPersonas">
+      <label for="numPersonas">Number of people</label><br>
+      <input type="number" name="numPersonas" placeholder="0" id="numPersonas">
     <!-- </form> -->
     <br>
-    <p>Propina por persona</p>
-    <input type="number" name="propXPer" id="propXPersona" placeholder="Propina por persona" readonly>
-    <p>Total por persona a pagar</p>
-    <input type="number" name="totalXPer" id="totalXPersona" placeholder="Total por persona" readonly>
+    <p>Tip Amount</p>
+    <p>/ person</p>
+    <input type="number" name="propXPer" id="propXPersona" placeholder="$0.00" readonly>
+    <p>Total</p>
+    <p>/person</p>
+    <input type="number" name="totalXPer" id="totalXPersona" placeholder="$0.00" readonly>
   </body>
 </html>
